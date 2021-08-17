@@ -1,0 +1,38 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+     <title>credit-card-cluster</title>
+     </head>
+     <body>
+         <form action="{{ url_for('predict')}}" method="post">
+             <h1>Advertisement advisor (based on credit card history)</h1>
+             <h3>Do not include dollar signs ($) or commas (,) in your input</h3><br/><br/>
+             
+             <h2>Enter the values for the past six months...
+             <h3>Total amount spent on purchases (USD):</h2>
+                <input type="text" id="total-purchases" name="purchases" required="required"><br>
+            <h3>Total amount spent where maximum single purchase amount was reached (USD):</h2>
+                <input type="text" id="oneoff-purchases" name="oneoff" required="required"><br>
+            <h3>Total amount spent on installment purchases (USD):</h2>
+                <input type="text" id="installment-purchases" name="installments" required="required"><br>
+            <h3>Total number of transactions:</h2>
+                <input type="text" id="p-trx" name="purchases_trx" required="required"><br>
+            <h3>Total amount in cash advances (USD):</h2>
+                <input type="text" id="cash-advance" name="cash" required="required"><br>
+            <h3>Total number of cash transactions (USD):</h2>
+                <input type="text" id="c-trx" name="cash_trx" required="required"><br><br/><br/><br/>
+            <h2>Enter the value of the most recent...
+            <h3>Credit card balance (USD):</h2>
+                <input type="text" id="card-balance" name="balance" required="required"><br>                    
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        </form> 
+        
+        <h3>{{ prediction_text }}<h3>
+        
+        
+    </body>
+ </html>
