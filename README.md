@@ -50,8 +50,4 @@ This file is the pickle containing the hyperparameter tuned kNeighborsClassifier
 
 ## Resources
 
-1. [Kaggle: Vehicle dataset](https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho)
-2. [YouTube: Live- Implementation of End To End Kaggle Machine Learning Project With Deployment by Krish Naik](https://www.youtube.com/watch?v=p_tpQSY1aTs)
-
-
-
+1. [Kaggle: Credit Card Dataset](https://www.kaggle.com/arjunbhasin2013/ccdata)
